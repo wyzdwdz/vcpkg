@@ -37,6 +37,7 @@ vcpkg_cmake_configure(
         "-DCMAKE_INSTALL_SYSCONFDIR=${CURRENT_PACKAGES_DIR}/etc/${PORT}"
         "-DWITH_SYSTEMD_SYSTEMUNITDIR=lib/systemd/system"
         "-DWITH_SYSTEMD_USERUNITDIR=lib/systemd/user"
+        "-DDBUS_SESSION_SOCKET_DIR=/tmp"
         ${options}
     OPTIONS_RELEASE
         -DDBUS_DISABLE_ASSERT=OFF
